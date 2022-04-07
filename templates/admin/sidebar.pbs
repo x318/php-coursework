@@ -1,0 +1,10 @@
+<nav class="sidebar">
+  <h1 class="sidebar_logo">Admin Panel</h1>
+  <div class="sidebar-nav mx-2">
+    <ul>
+      <li class="{- echo $activePage == 'products' ? 'active' : '' }"><a href="/admin/products">Products</a></li>
+      <li class="{- echo $activePage == 'pages' ? 'active' : '' }"><a href="/admin/pages">Pages</a></li>
+      <li class=""><a href="/admin/logout">Logout</a></li>
+    </ul>
+  </div>
+</nav>

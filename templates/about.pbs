@@ -1,0 +1,17 @@
+{> extends layout.pbs }
+<div>{> block title }About{ endblock }</div>
+{> block content }
+<h1 class="text-center">About me</h1>
+<div class="content__container">
+  <h2 class="content__title">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus earum minus aperiam aspernatur officia quos,
+    similique quibusdam facilis nihil, ipsa omnis facere laudantium, sunt sequi. Rerum dolor minus vitae molestias.
+  </h2>
+  <div class="d-flex justify-content-center">
+    <img
+      src="https://sun9-36.userapi.com/impg/6y1qfYxsiBtB7-b2pKB-dxL35qN38saVDifs0A/vRrtteEmFQw.jpg?size=635x698&quality=96&sign=f249b0f19e7fce3cbe52ba63a2e8dadd&type=album"
+      alt=""
+    />
+  </div>
+</div>
+{ endblock }

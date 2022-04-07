@@ -1,0 +1,22 @@
+<nav class="sidebar">
+  <h1 class="sidebar_logo">filmtrak</h1>
+  <div class="sidebar-nav mx-2">
+    <ul>
+      <li class="{- echo $activePage == 'index' ? 'active' : '' }"><a href="/">Home</a></li>
+      <li class="{- echo ($activePage == 'films' || $activePage == 'film') ? 'active' : '' }">
+        <a href="/films">Films</a>
+      </li>
+      <li class="{- echo $activePage == 'about' ? 'active' : '' }"><a href="/about">About</a></li>
+      <li class="{- echo $activePage == 'company' ? 'active' : ''}"><a href="/company">Company</a></li>
+
+      <li class="{- echo $activePage == 'categories' ? 'active' : '' }"><a href="/categories">Categories</a></li>
+      <ul>
+        <li class="{- echo $activeSection == 'horror' ? 'active' : '' }"><a href="/category?cat=horror">Horror</a></li>
+        <li class="{- echo $activeSection == 'triller' ? 'active' : '' }">
+          <a href="/category?cat=triller">Triller</a>
+        </li>
+        <li class="{- echo $activeSection == 'comedy' ? 'active' : '' }"><a href="/category?cat=comedy">Comedy</a></li>
+      </ul>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404</title>
+
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .container__center {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .text-card {
+        width: 50vw;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: 30px solid #42b983;
+        background-color: #f8f8f8;
+      }
+      .link {
+        font-size: 1.2rem;
+        color: #42b983;
+      }
+      div {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container__center">
+      <div class="text-card">
+        <div>
+          <h1>404 - Page not found</h1>
+        </div>
+        <div>
+          <a href="/" class="link">To Home</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

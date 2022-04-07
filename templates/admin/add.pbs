@@ -1,0 +1,25 @@
+{> extends admin/layout.pbs }
+
+<div>{> block title }Edit Product{ endblock }</div>
+{> block content }
+<div class="">
+  <h2 class="text-center">Edit Product</h2>
+  <form action="/admin/products/add/submit" method="post">
+    {- foreach($fields as $field): }
+    <div class="mb-3">
+      <label for="{{ $field['column_name'] }}" class="form-label">{{ $field['column_name'] }}</label>
+      <input
+        name="{{ $field['column_name'] }}"
+        type="{{ $field['column_name'] }}"
+        class="form-control"
+        id="{{ $field['column_name'] }}"
+        aria-describedby="emailHelp"
+      />
+    </div>
+    {- endforeach;}
+    <div class="d-grid">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+{ endblock }

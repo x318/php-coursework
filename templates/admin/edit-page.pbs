@@ -1,0 +1,18 @@
+{> extends admin/layout.pbs }
+
+<div>{> block title }Edit Product{ endblock }</div>
+{> block content }
+<div class="">
+  <h2 class="text-center">Edit Page</h2>
+  <form action="/admin/pages/edit/submit" method="post">
+    <input type="hidden" name="template" value="{{ $template }}" />
+    <div class="mb-3">
+      <label for="file-edit" class="form-label">File:</label>
+      <textarea class="form-control" name="file-edit" cols="30" rows="30">{{ $contents }}</textarea>
+    </div>
+    <div class="d-grid">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+{ endblock }

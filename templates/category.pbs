@@ -1,0 +1,30 @@
+{> extends layout.pbs }
+
+<div>{> block title }{{ $category }}{ endblock }</div>
+
+{> block content }
+<div class="">
+  <h2 class="">{{ $category }}</h2>
+  <div class="d-flex flex-row flex-wrap">
+    {- foreach($films as $film): }
+    <a href="/film?id={{ $film['id'] }}">
+      <div class="film_card card m-2">
+        <div class="film_image-container">
+          <img src="{{ $film['img'] }}" alt="" />
+        </div>
+        <div class="film_bottom">
+          <div class="film_title">
+            <span class="film_name"> {{ $film['title'] }}</span>
+            <span class="film_price"> {{ $film['price'] }}$</span>
+          </div>
+          <div class="film_desc">
+            {{ $film['description'] }}
+          </div>
+        </div>
+      </div>
+    </a>
+    {- endforeach;}
+  </div>
+</div>
+
+{ endblock }

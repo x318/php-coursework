@@ -1,0 +1,26 @@
+{> extends admin/layout.pbs }
+
+<div>{> block title }Admin Panel{ endblock }</div>
+
+{> block content }
+<div class="">
+  {- foreach($tamplates as $template): }
+  <form action="/admin/pages/edit?name={{ $template }}" method="post">
+    <div class="card my-2">
+      <div class="card-body">
+        <div class="d-flex">
+          <div class="">
+            <h3>{{ $template }}</h3>
+          </div>
+          <div class="position-absolute end-0 mx-4 d-flex flex-row">
+            <form action="/admin/pages/edit?name={{ $template }}" method="post">
+              <button type="submit" class="btn btn-primary mx-1">Edit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  {- endforeach;}
+</div>
+{ endblock }

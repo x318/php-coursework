@@ -1,0 +1,12 @@
+{> extends layout.pbs }
+<div>{> block title }Company{ endblock }</div>
+{> block content }
+<div class="content__container">
+  <h2 class="content__title">Наши данные</h2>
+  <p class="content__text">Телефон: +79831556756</p>
+  <p class="content__text">Где мы находимся</p>
+  <div class="">
+    <img src="../img/map.png" alt="" />
+  </div>
+</div>
+{ endblock }
